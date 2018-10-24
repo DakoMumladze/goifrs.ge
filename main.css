@@ -8610,9 +8610,23 @@ h3 {
     border-color: #dee2e6;
   }
 }
+header {
+  height: 900px;
+  background-image: url(img/header.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  padding-bottom: 5rem;
+}
+
 .container-fluid {
   padding-left: 0;
   padding-right: 0;
+}
+.container-fluid nav {
+  width: 50%;
+  margin: auto;
+  background: transparent;
 }
 
 /*# sourceMappingURL=main.css.map */
