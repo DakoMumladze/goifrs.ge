@@ -1,0 +1,24 @@
+{
+  "name": "goifrs.ge",
+  "version": "1.0.0",
+  "description": "ifrs solution\r #Install Node.js;NPM package manager;\r #Install Sass\r #Install Bootstrap",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DakoMumladze/goifrs.ge.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DakoMumladze/goifrs.ge/issues"
+  },
+  "homepage": "https://github.com/DakoMumladze/goifrs.ge#readme",
+  "dependencies": {
+    "bootstrap": "^4.1.3",
+    "jquery": "^3.3.1",
+    "popper.js": "^1.14.3"
+  }
+}
