@@ -1,0 +1,2 @@
+# goifrs.ge
+ifrs solution
