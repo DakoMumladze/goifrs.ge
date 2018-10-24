@@ -1,5 +1,28 @@
 @import "node_modules/bootstrap/scss/bootstrap";
+//variables
+$padt:10rem;
+$padb:5rem;
+//mixins
+@mixin bg{
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position:top center;
+}
+@mixin bg-light{
+    background-color:transparent;
+}
+header{
+    height: 900px;
+    background-image: url(img/header.jpg);
+    @include bg;
+    padding-bottom: $padb;
+}
 .container-fluid{
     padding-left:0;
-    padding-right:0;
+    padding-right:0;   
+    nav{
+        width:50%;
+        margin:auto;
+        background:transparent;
+    }
 }
