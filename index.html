@@ -11,7 +11,7 @@
 </head>
 <body>
     <header class="container-fluid header">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top">
             <div class="container">
                 <a class="navbar-brand" href="index.html">GoIfrs</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -49,7 +49,15 @@
     </header>
     
     
-<script src="node_modules/jquery/dist/jquery.min.js"></script> 
+<script src="node_modules/jquery/dist/jquery.min.js"></script>
+<script>
+        $(function () {
+       $(document).scroll(function () {
+         var $nav = $(".fixed-top");
+         $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+       });
+     });
+     </script>
 <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 </body>
 </html>

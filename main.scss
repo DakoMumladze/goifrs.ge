@@ -2,12 +2,15 @@
 //variables
 $padt:10rem;
 $padb:5rem;
+
 //mixins
+body{
+    min-height:200vh;
+}
 @mixin bg{
     background-repeat:no-repeat;
     background-size: cover;
     background-position:top center;
-    background-attachment: fixed;
 }
 @mixin bg-light{
     background-color:transparent;
@@ -20,6 +23,11 @@ header{
 }
 .container-fluid{
     padding-left:0;
-    padding-right:0;   
-
+    padding-right:0; 
+        .fixed-top{
+        transition:500ms ease;
+        }
+        .fixed-top.scrolled{
+        background:rgba(255,255,255,0.7);
+        }
 }

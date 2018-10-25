@@ -8610,19 +8610,28 @@ h3 {
     border-color: #dee2e6;
   }
 }
+body {
+  min-height: 200vh;
+}
+
 header {
   height: 900px;
   background-image: url(img/header.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top center;
-  background-attachment: fixed;
   padding-bottom: 5rem;
 }
 
 .container-fluid {
   padding-left: 0;
   padding-right: 0;
+}
+.container-fluid .fixed-top {
+  transition: 500ms ease;
+}
+.container-fluid .fixed-top.scrolled {
+  background: rgba(255, 255, 255, 0.7);
 }
 
 /*# sourceMappingURL=main.css.map */
