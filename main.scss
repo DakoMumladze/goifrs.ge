@@ -1,12 +1,33 @@
 @import "node_modules/bootstrap/scss/bootstrap";
-//variables
-$padt:10rem;
-$padb:5rem;
-
-//mixins
+$theme-colors: map-remove($theme-colors, "primary", "danger");
 body{
     min-height:200vh;
 }
+*{
+    font-family: 'Vollkorn-Regular';
+}
+//Fonts
+@font-face {
+  font-family: 'Vollkorn-Regular';
+  src: url('fonts/Vollkorn-Regular.eot?#iefix') format('embedded-opentype'),  url('fonts/Vollkorn-Regular.woff') format('woff'), url('fonts/Vollkorn-Regular.ttf')  format('truetype'), url('fonts/Vollkorn-Regular.svg#Vollkorn-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Khand-Regular';
+  src: url('fonts/Khand-Regular.eot?#iefix') format('embedded-opentype'),  url('fonts/Khand-Regular.woff') format('woff'), url('fonts/Khand-Regular.ttf')  format('truetype'), url('fonts/Khand-Regular.svg#Khand-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+//variables
+$padt:10rem;
+$padb:5rem;
+$hdfont:2rem;
+$regfont:1.2rem;
+$smallfont:1rem;
+$primary:rgba(185, 59, 32, .8);
+$wh:rgb(255,255,255);
+//mixins
 @mixin bg{
     background-repeat:no-repeat;
     background-size: cover;
@@ -15,19 +36,71 @@ body{
 @mixin bg-light{
     background-color:transparent;
 }
+$theme-colors: (
+  "primary": rgba(185, 59, 32, .8),
+  "danger": #ff4136
+);
+
 header{
-    height: 900px;
+    position: relative;
+    overflow: hidden;
+    height: 500px;
     background-image: url(img/header.jpg);
     @include bg;
     padding-bottom: $padb;
+    .header_text{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color:$wh;
+            h1{
+                z-index: 1;
+            }
+            p{
+                z-index: 1;
+            }
+            a{
+                cursor: pointer;
+                color:$wh;
+                z-index: 1;
+            }
+   
+    }
+    .overlay{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background:#000;
+        opacity: .4;
+    }
 }
 .container-fluid{
     padding-left:0;
     padding-right:0; 
         .fixed-top{
         transition:500ms ease;
+            .navbar-brand{
+                font-size:$hdfont;
+                color:$primary;             
+                span{                   
+                    font-size: $smallfont;
+                }
+            }
+            .nav-link{
+                text-transform: uppercase;
+                color:$wh;
+                font-size: $smallfont;
+                transition:.3s;
+                &:hover{
+                   color: rgba(255,255,255,0.7);
+                }
+            }
         }
         .fixed-top.scrolled{
-        background:rgba(255,255,255,0.7);
+        background:rgba(0,0,0,0.7);
         }
 }
