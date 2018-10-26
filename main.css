@@ -8630,22 +8630,30 @@ body {
   font-weight: normal;
   font-style: normal;
 }
+.heading {
+  font-size: 2rem;
+}
+
+.primary-color {
+  color: rgba(185, 59, 32, 0.8);
+}
+
 header {
   position: relative;
   overflow: hidden;
-  height: 500px;
   background-image: url(img/header.jpg);
+  background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top center;
-  padding-bottom: 5rem;
+  padding-bottom: 8rem;
 }
 header .header_text {
   height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  padding-top: 15rem;
   color: white;
 }
 header .header_text h1 {
@@ -8658,6 +8666,14 @@ header .header_text a {
   cursor: pointer;
   color: white;
   z-index: 1;
+}
+header .header_text .btn-primary {
+  background-color: rgba(185, 59, 32, 0.8);
+  border-color: rgba(185, 59, 32, 0.8);
+  padding: 0.575rem 1.75rem;
+}
+header .header_text .btn-primary:active {
+  background-color: rgba(185, 59, 32, 0.8);
 }
 header .overlay {
   width: 100%;
@@ -8694,6 +8710,19 @@ header .overlay {
 }
 .container-fluid .fixed-top.scrolled {
   background: rgba(0, 0, 0, 0.7);
+}
+
+section h2:after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: white;
+}
+
+.about {
+  padding-top: 8rem;
+  background-color: #e8ecf8;
 }
 
 /*# sourceMappingURL=main.css.map */
