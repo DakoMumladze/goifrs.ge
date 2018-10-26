@@ -1,5 +1,4 @@
 @import "node_modules/bootstrap/scss/bootstrap";
-$theme-colors: map-remove($theme-colors, "primary", "danger");
 body{
     min-height:200vh;
 }
@@ -20,13 +19,14 @@ body{
   font-style: normal;
 }
 //variables
-$padt:10rem;
-$padb:5rem;
+$padt:15rem;
+$padb:8rem;
 $hdfont:2rem;
 $regfont:1.2rem;
 $smallfont:1rem;
 $primary:rgba(185, 59, 32, .8);
 $wh:rgb(255,255,255);
+$grey:#e8ecf8;
 //mixins
 @mixin bg{
     background-repeat:no-repeat;
@@ -36,16 +36,17 @@ $wh:rgb(255,255,255);
 @mixin bg-light{
     background-color:transparent;
 }
-$theme-colors: (
-  "primary": rgba(185, 59, 32, .8),
-  "danger": #ff4136
-);
-
+.heading{
+    font-size: $hdfont;
+}
+.primary-color{
+    color:$primary;
+}
 header{
     position: relative;
     overflow: hidden;
-    height: 500px;
     background-image: url(img/header.jpg);
+    background-attachment: fixed;
     @include bg;
     padding-bottom: $padb;
     .header_text{
@@ -53,7 +54,7 @@ header{
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
+        padding-top: $padt;
         color:$wh;
             h1{
                 z-index: 1;
@@ -66,7 +67,12 @@ header{
                 color:$wh;
                 z-index: 1;
             }
-   
+            .btn-primary{
+                background-color:$primary;
+                border-color:$primary;
+                padding: 0.575rem 1.75rem;
+            }
+            .btn-primary:active{ background-color:$primary;}
     }
     .overlay{
         width: 100%;
@@ -103,4 +109,15 @@ header{
         .fixed-top.scrolled{
         background:rgba(0,0,0,0.7);
         }
+}
+section h2:after{
+    content:"";
+    display: block;
+    width: 50px;
+    height: 3px;
+    background:$wh;
+}
+.about{
+    padding-top:$padb;
+    background-color:$grey;
 }
