@@ -8620,7 +8620,7 @@ body {
 
 @font-face {
   font-family: "Poppins";
-  src: url("Poppins-Regular.eot?#iefix") format("embedded-opentype"), url("Poppins-Regular.woff") format("woff"), url("Poppins-Regular.ttf") format("truetype"), url("Poppins-Regular.svg#Poppins-Regular") format("svg");
+  src: url("fonts/Poppins-Regular.eot?#iefix") format("embedded-opentype"), url("fonts/Poppins-Regular.woff") format("woff"), url("fonts/Poppins-Regular.ttf") format("truetype"), url("fonts/Poppins-Regular.svg#Poppins-Regular") format("svg");
   font-weight: normal;
   font-style: normal;
 }
