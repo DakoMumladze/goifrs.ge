@@ -8726,8 +8726,7 @@ header .header_text .btn-primary:active {
 .container-fluid .fixed-top .nav-item:after {
   content: "";
   display: block;
-  width: 80%;
-  margin: auto;
+  width: 100%;
   height: 2px;
   background: rgba(185, 59, 32, 0.8);
   transition: 0.3s;
