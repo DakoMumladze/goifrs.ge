@@ -195,3 +195,24 @@ section h2:after{
         padding-top: 6.5rem;
     }
 }
+
+//footer section
+footer{
+    padding-top:2rem;
+    padding-bottom:2rem;
+    background:$grey;
+.footer{
+    justify-content: space-between;
+    .socials{
+        .nav-item{
+            background:$wh;
+            border-radius: 50%;
+        }
+        a{
+            color:$primary;
+            border-radius: 50%;
+        }
+    }
+
+}
+}
