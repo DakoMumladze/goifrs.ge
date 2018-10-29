@@ -8630,6 +8630,14 @@ body {
   font-weight: normal;
   font-style: normal;
 }
+.navbar-light .navbar-nav .show > .nav-link, .navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .nav-link.active {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link:focus {
+  color: rgba(255, 255, 255, 0.7);
+}
+
 .heading {
   font-size: 2rem;
 }
@@ -8648,6 +8656,10 @@ header {
   background-position: top center;
   padding-bottom: 8rem;
 }
+header .fa-facebook {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
 header .header_text {
   height: 100%;
   display: flex;
@@ -8655,6 +8667,7 @@ header .header_text {
   align-items: center;
   padding-top: 15rem;
   color: white;
+  font-size: 1.2rem;
 }
 header .header_text h1 {
   z-index: 1;
@@ -8675,7 +8688,8 @@ header .header_text .btn-primary {
 header .header_text .btn-primary:active {
   background-color: rgba(185, 59, 32, 0.8);
 }
-header .overlay {
+
+.overlay {
   width: 100%;
   height: 100%;
   position: absolute;
@@ -8702,11 +8716,21 @@ header .overlay {
 .container-fluid .fixed-top .nav-item:after {
   content: "";
   display: block;
-  width: 100%;
+  width: 80%;
+  margin: auto;
   height: 2px;
   background: rgba(185, 59, 32, 0.8);
   transition: 0.3s;
+  opacity: 0;
+}
+.container-fluid .fixed-top .nav-item {
+  padding-right: 0.3rem;
+}
+.container-fluid .fixed-top .nav-item:hover:after {
   opacity: 1;
+}
+.container-fluid .fixed-top .nav-item:last-child:hover:after {
+  display: none;
 }
 .container-fluid .fixed-top .nav-link {
   text-transform: uppercase;
@@ -8728,11 +8752,30 @@ section h2:after {
   width: 50px;
   height: 3px;
   background: white;
+  margin-top: 0.5rem;
 }
 
 .about {
   padding-top: 8rem;
   background-color: #e8ecf8;
+}
+
+.services {
+  padding-top: 8rem;
+}
+.services .services h2:after {
+  background: rgba(185, 59, 32, 0.8);
+}
+
+.contact {
+  padding-top: 8rem;
+  padding-bottom: 15rem;
+  background-color: #212529;
+  background: url(img/map.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
 }
 
 /*# sourceMappingURL=main.css.map */
