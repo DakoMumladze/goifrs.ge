@@ -8749,7 +8749,7 @@ header .header_text .btn-primary:active {
 section h2:after {
   content: "";
   display: block;
-  width: 50px;
+  width: 55px;
   height: 3px;
   background: white;
   margin-top: 0.5rem;
@@ -8757,7 +8757,7 @@ section h2:after {
 
 .about {
   padding-top: 8rem;
-  background-color: #e8ecf8;
+  background-color: #e4e6e8;
 }
 
 .services {

@@ -26,7 +26,7 @@ $regfont:1.2rem;
 $smallfont:1rem;
 $primary:rgba(185, 59, 32, .8);
 $wh:rgb(255,255,255);
-$grey:#e8ecf8;
+$grey:#e4e6e8;
 //mixins
 @mixin bg{
     background-repeat:no-repeat;
@@ -148,7 +148,7 @@ header{
 section h2:after{
     content:"";
     display: block;
-    width: 50px;
+    width: 55px;
     height: 3px;
     background:$wh;
     margin-top: .5rem;
