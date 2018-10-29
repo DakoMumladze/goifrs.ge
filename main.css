@@ -8770,13 +8770,17 @@ section h2:after {
 .contact {
   padding-top: 8rem;
   padding-bottom: 15rem;
-  background-color: #212529;
   background: url(img/map.jpg);
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top center;
   color: white;
+}
+.contact .contact_left {
+  background: white;
+  color: #141414;
+  border-radius: 3px;
 }
 .contact .btn-primary {
   background-color: rgba(185, 59, 32, 0.8);
@@ -8786,10 +8790,10 @@ section h2:after {
   background-color: rgba(185, 59, 32, 0.8);
 }
 .contact .email {
-  color: white;
+  color: #141414;
 }
 .contact .contact_info {
-  padding-top: 6.5rem;
+  padding-top: 2.5rem;
 }
 
 footer {

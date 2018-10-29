@@ -178,21 +178,25 @@ section h2:after{
 .contact{
     padding-top:$padb;
     padding-bottom:$padt;
-    background-color: #212529;
     background:url(img/map.jpg);
     background-attachment: fixed;
     @include bg;
     color:$wh;
+    .contact_left{
+        background:$wh;
+        color:rgb(20, 20, 20);
+        border-radius:3px;
+    }
     .btn-primary{
         background-color:$primary;
         border-color:$primary;
     }
     .btn-primary:active{ background-color:$primary;}
     .email{
-        color:$wh;
+        color:rgb(20, 20, 20);
     }
     .contact_info{
-        padding-top: 6.5rem;
+        padding-top: 2.5rem;
     }
 }
 
