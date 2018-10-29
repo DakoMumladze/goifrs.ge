@@ -8785,5 +8785,11 @@ section h2:after {
 .contact .btn-primary:active {
   background-color: rgba(185, 59, 32, 0.8);
 }
+.contact .email {
+  color: white;
+}
+.contact .contact_info {
+  padding-top: 6.5rem;
+}
 
 /*# sourceMappingURL=main.css.map */
