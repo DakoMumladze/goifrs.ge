@@ -32,6 +32,7 @@ $grey:#e4e6e8;
     background-repeat:no-repeat;
     background-size: cover;
     background-position:top center;
+    background-size: cover;
 }
 @mixin bg-light{
     background-color:transparent;
@@ -45,6 +46,12 @@ $grey:#e4e6e8;
     }
     
 }
+.btn-primary{
+    background-color:$primary;
+    border-color:$primary;
+}
+.btn-primary:active{ background-color:$primary;}
+
 .heading{
     font-size: $hdfont;
 }
@@ -145,6 +152,9 @@ header{
         background:rgba(0,0,0,0.7);
         }
 }
+section h2{
+    font-weight: bold;
+}
 section h2:after{
     content:"";
     display: block;
@@ -156,6 +166,7 @@ section h2:after{
 //about us section
 .about{
     padding-top:$padb;
+    padding-bottom: 3rem;
     background-color:$grey;
 }
 //services section
@@ -166,11 +177,20 @@ section h2:after{
         background:$primary;
     }
 }
-
-
-
-
-
+//news section
+.news{
+    padding-top: $padb;
+    padding-bottom: $padb;
+    .img_container{
+        overflow: hidden;
+    }
+    p{
+        font-size: .9rem;
+    }
+    h3{
+        font-size: $regfont;
+    }
+}
 
 
 
@@ -187,16 +207,14 @@ section h2:after{
         color:rgb(20, 20, 20);
         border-radius:3px;
     }
-    .btn-primary{
-        background-color:$primary;
-        border-color:$primary;
-    }
-    .btn-primary:active{ background-color:$primary;}
     .email{
         color:rgb(20, 20, 20);
     }
     .contact_info{
         padding-top: 2.5rem;
+    }
+    label{
+        font-size: $regfont;
     }
 }
 
@@ -212,6 +230,12 @@ footer{
             background:$wh;
             border-radius: 50%;
         }
+        .nav-item:first-child{
+            border-radius: 0;
+            background:none;
+            padding-top: .4rem;
+            cursor: pointer;
+        }
         a{
             color:$primary;
             border-radius: 50%;
@@ -219,4 +243,10 @@ footer{
     }
 
 }
+}
+.fa-arrow-right{
+    transition: .3s;
+    &:hover{
+        transform: translateX(10px);
+    }
 }

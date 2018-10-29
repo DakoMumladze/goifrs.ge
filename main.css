@@ -8638,6 +8638,15 @@ body {
   color: rgba(255, 255, 255, 0.7);
 }
 
+.btn-primary {
+  background-color: rgba(185, 59, 32, 0.8);
+  border-color: rgba(185, 59, 32, 0.8);
+}
+
+.btn-primary:active {
+  background-color: rgba(185, 59, 32, 0.8);
+}
+
 .heading {
   font-size: 2rem;
 }
@@ -8654,6 +8663,7 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top center;
+  background-size: cover;
   padding-bottom: 8rem;
 }
 header .fa-facebook {
@@ -8746,6 +8756,10 @@ header .header_text .btn-primary:active {
   background: rgba(0, 0, 0, 0.7);
 }
 
+section h2 {
+  font-weight: bold;
+}
+
 section h2:after {
   content: "";
   display: block;
@@ -8757,6 +8771,7 @@ section h2:after {
 
 .about {
   padding-top: 8rem;
+  padding-bottom: 3rem;
   background-color: #e4e6e8;
 }
 
@@ -8767,6 +8782,20 @@ section h2:after {
   background: rgba(185, 59, 32, 0.8);
 }
 
+.news {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
+.news .img_container {
+  overflow: hidden;
+}
+.news p {
+  font-size: 0.9rem;
+}
+.news h3 {
+  font-size: 1.2rem;
+}
+
 .contact {
   padding-top: 8rem;
   padding-bottom: 15rem;
@@ -8775,6 +8804,7 @@ section h2:after {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top center;
+  background-size: cover;
   color: white;
 }
 .contact .contact_left {
@@ -8782,18 +8812,14 @@ section h2:after {
   color: #141414;
   border-radius: 3px;
 }
-.contact .btn-primary {
-  background-color: rgba(185, 59, 32, 0.8);
-  border-color: rgba(185, 59, 32, 0.8);
-}
-.contact .btn-primary:active {
-  background-color: rgba(185, 59, 32, 0.8);
-}
 .contact .email {
   color: #141414;
 }
 .contact .contact_info {
   padding-top: 2.5rem;
+}
+.contact label {
+  font-size: 1.2rem;
 }
 
 footer {
@@ -8808,9 +8834,22 @@ footer .footer .socials .nav-item {
   background: white;
   border-radius: 50%;
 }
+footer .footer .socials .nav-item:first-child {
+  border-radius: 0;
+  background: none;
+  padding-top: 0.4rem;
+  cursor: pointer;
+}
 footer .footer .socials a {
   color: rgba(185, 59, 32, 0.8);
   border-radius: 50%;
+}
+
+.fa-arrow-right {
+  transition: 0.3s;
+}
+.fa-arrow-right:hover {
+  transform: translateX(10px);
 }
 
 /*# sourceMappingURL=main.css.map */
