@@ -182,4 +182,10 @@ section h2:after{
     background:url(img/map.jpg);
     background-attachment: fixed;
     @include bg;
+    color:$wh;
+    .btn-primary{
+        background-color:$primary;
+        border-color:$primary;
+    }
+    .btn-primary:active{ background-color:$primary;}
 }
