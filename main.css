@@ -8671,6 +8671,7 @@ header .fa-facebook {
   font-size: 1.2rem;
 }
 header .header_text {
+  word-wrap: break-word;
   height: 100%;
   display: flex;
   flex-direction: column;
