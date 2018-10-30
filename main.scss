@@ -27,6 +27,9 @@ $smallfont:1rem;
 $primary:rgba(185, 59, 32, .8);
 $wh:rgb(255,255,255);
 $grey:#e4e6e8;
+::selection{
+    background-color:$primary;
+}
 //mixins
 @mixin bg{
     background-repeat:no-repeat;
@@ -208,10 +211,14 @@ section h2:after{
         padding-right: 1rem;
     }
     .card{
-        transition: .3s;
+        img{
+            transition: all .3s ease-in-out;
+        }
         &:hover{
+            img{
+                transform: scale(1.2);
+            }
             cursor: pointer;
-            @include box_shadow();
             h3{
                 color:$primary;
                 font-weight: bold;
