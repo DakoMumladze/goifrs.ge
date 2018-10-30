@@ -56,6 +56,10 @@ $grey:#e4e6e8;
     border-color:$primary;
 }
 .btn-primary:active{ background-color:$primary;}
+.btn-primary:hover{ 
+    background-color:$primary;
+    border-color:$primary;
+}
 
 .heading{
     font-size: $hdfont;

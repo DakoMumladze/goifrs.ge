@@ -8647,6 +8647,11 @@ body {
   background-color: rgba(185, 59, 32, 0.8);
 }
 
+.btn-primary:hover {
+  background-color: rgba(185, 59, 32, 0.8);
+  border-color: rgba(185, 59, 32, 0.8);
+}
+
 .heading {
   font-size: 2rem;
 }
