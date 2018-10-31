@@ -1,5 +1,8 @@
 
 // Build the chart
+Highcharts.setOptions({
+    colors: ['#4D8076', '#9B89B3', '#296073', '#3596B5', '#C34A36']
+});
 Highcharts.chart('container', {
     chart: {
       plotBackgroundColor: null,
