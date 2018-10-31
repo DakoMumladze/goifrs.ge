@@ -26,7 +26,7 @@ $regfont:1.2rem;
 $smallfont:1rem;
 $primary:rgba(185, 59, 32, .8);
 $wh:rgb(255,255,255);
-$grey:#e4e6e8;
+$grey:#f9f9f9;
 ::selection{
     background-color:$primary;
 }
@@ -167,13 +167,14 @@ header{
 }
 section h2{
     font-weight: bold;
+    padding-bottom: 2.5rem;
 }
 section h2:after{
     content:"";
     display: block;
     width: 55px;
     height: 3px;
-    background:$wh;
+    background:#b1b7b9;
     margin-top: .5rem;
 }
 //about us section
@@ -185,16 +186,36 @@ section h2:after{
 //services section
 .services{
     padding-top:$padb;
-    
-    .services h2:after{
-        background:$primary;
+    padding-bottom: $padb;
+    .package_box{
+        background:$grey;
+        border-radius: .25rem;
+        transition: all .3s ease-in-out;
+        cursor: pointer;
+        .more{
+            padding-top: 6rem;
+        }
+        &:hover{
+            @include box_shadow();
+            h3,h4{
+                color:$primary;
+                font-weight: bold;
+            }
+            .btn-outline-dark{
+                background:#343a40;
+                color:#fff;
+            }
+        }
+    }
+    .nav-item{
+        padding-bottom: .5rem;
     }
 }
 //news section
 .news{
     padding-top: $padb;
     padding-bottom: $padb;
-    background-color: #e4e6e8;
+    background-color: $grey;
     .img_container{
         overflow: hidden;
     }
@@ -240,7 +261,7 @@ section h2:after{
     .contact_left{
         background:$wh;
         color:rgb(20, 20, 20);
-        border-radius:3px;
+        border-radius: 0.25rem;
     }
     .email{
         color:rgb(20, 20, 20);
@@ -255,29 +276,9 @@ section h2:after{
 
 //footer section
 footer{
-    padding-top:1rem;
-    padding-bottom:1rem;
+    padding-top:.5rem;
+    padding-bottom:.3rem;
     background:$grey;
-.footer{
-    justify-content: space-between;
-    .socials{
-        .nav-item{
-            background:$wh;
-            border-radius: 50%;
-        }
-        .nav-item:first-child{
-            border-radius: 0;
-            background:none;
-            padding-top: .4rem;
-            cursor: pointer;
-        }
-        a{
-            color:$primary;
-            border-radius: 50%;
-        }
-    }
-
-}
 }
 .fa-arrow-right{
     transition: .3s;

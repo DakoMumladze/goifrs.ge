@@ -8768,6 +8768,7 @@ header .header_text .btn-primary:active {
 
 section h2 {
   font-weight: bold;
+  padding-bottom: 2.5rem;
 }
 
 section h2:after {
@@ -8775,34 +8776,57 @@ section h2:after {
   display: block;
   width: 55px;
   height: 3px;
-  background: white;
+  background: #b1b7b9;
   margin-top: 0.5rem;
 }
 
 .about {
   padding-top: 8rem;
   padding-bottom: 3rem;
-  background-color: #e4e6e8;
+  background-color: #f9f9f9;
 }
 
 .services {
   padding-top: 8rem;
+  padding-bottom: 8rem;
 }
-.services .services h2:after {
-  background: rgba(185, 59, 32, 0.8);
+.services .package_box {
+  background: #f9f9f9;
+  border-radius: 0.25rem;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+.services .package_box .more {
+  padding-top: 6rem;
+}
+.services .package_box:hover {
+  box-shadow: 6px 3px 9px 2px rgba(85, 78, 78, 0.69);
+  -webkit-box-shadow: 6px 3px 9px 2px rgba(85, 78, 78, 0.69);
+  -moz-box-shadow: 6px 3px 9px 2px rgba(85, 78, 78, 0.69);
+}
+.services .package_box:hover h3, .services .package_box:hover h4 {
+  color: rgba(185, 59, 32, 0.8);
+  font-weight: bold;
+}
+.services .package_box:hover .btn-outline-dark {
+  background: #343a40;
+  color: #fff;
+}
+.services .nav-item {
+  padding-bottom: 0.5rem;
 }
 
 .news {
   padding-top: 8rem;
   padding-bottom: 8rem;
-  background-color: #e4e6e8;
+  background-color: #f9f9f9;
 }
 .news .img_container {
   overflow: hidden;
 }
 .news p {
   font-size: 0.9rem;
-  border-top: 2px solid #e4e6e8;
+  border-top: 2px solid #f9f9f9;
 }
 .news h3 {
   font-size: 1.2rem;
@@ -8840,7 +8864,7 @@ section h2:after {
 .contact .contact_left {
   background: white;
   color: #141414;
-  border-radius: 3px;
+  border-radius: 0.25rem;
 }
 .contact .email {
   color: #141414;
@@ -8853,26 +8877,9 @@ section h2:after {
 }
 
 footer {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  background: #e4e6e8;
-}
-footer .footer {
-  justify-content: space-between;
-}
-footer .footer .socials .nav-item {
-  background: white;
-  border-radius: 50%;
-}
-footer .footer .socials .nav-item:first-child {
-  border-radius: 0;
-  background: none;
-  padding-top: 0.4rem;
-  cursor: pointer;
-}
-footer .footer .socials a {
-  color: rgba(185, 59, 32, 0.8);
-  border-radius: 50%;
+  padding-top: 0.5rem;
+  padding-bottom: 0.3rem;
+  background: #f9f9f9;
 }
 
 .fa-arrow-right {
