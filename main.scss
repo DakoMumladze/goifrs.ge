@@ -218,6 +218,9 @@ section h2:after{
     background-color: $grey;
     .img_container{
         overflow: hidden;
+        img{
+            height: 250px;
+        }
     }
     p{
         font-size: .9rem;

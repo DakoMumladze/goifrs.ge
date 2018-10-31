@@ -8824,6 +8824,9 @@ section h2:after {
 .news .img_container {
   overflow: hidden;
 }
+.news .img_container img {
+  height: 250px;
+}
 .news p {
   font-size: 0.9rem;
   border-top: 2px solid #f9f9f9;
