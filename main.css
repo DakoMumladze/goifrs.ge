@@ -8821,6 +8821,9 @@ section h2:after {
   padding-bottom: 8rem;
   background-color: #f9f9f9;
 }
+.news .button {
+  margin-top: 4rem;
+}
 .news .img_container {
   overflow: hidden;
 }

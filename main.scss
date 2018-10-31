@@ -216,6 +216,9 @@ section h2:after{
     padding-top: $padb;
     padding-bottom: $padb;
     background-color: $grey;
+    .button{
+        margin-top:4rem;
+    }
     .img_container{
         overflow: hidden;
         img{
