@@ -210,6 +210,52 @@ section h2:after{
         padding-bottom: .5rem;
     }
 }
+//process section
+.process{
+    padding-top:$padb;
+    padding-bottom: $padt;
+    color:$wh;
+    background:url(img/section.jpg);
+    background-attachment: fixed;
+    @include bg();
+    h2{
+        padding-bottom: 5rem;
+        &:after{
+            background:$wh;
+        }
+    }
+    .box_wrapper{
+        border: 2px solid $wh;
+        border-radius: .25rem;
+        padding: 1.5rem;
+        position: relative;
+    }
+    ul{
+        list-style-type: disc;
+    }
+    .box_top{
+        padding-top: 1rem;
+    }
+    .box_bottom{
+        position: absolute;
+        left: 11rem;
+        transform:translateX(3%);
+        p{
+            padding:.7rem;
+        }
+    }
+    #spec{
+        left: 7rem;
+        top: -1rem;
+    }
+}
+
+
+
+
+
+
+
 //news section
 .news{
     padding-top: $padb;

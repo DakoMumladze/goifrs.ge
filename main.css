@@ -8815,6 +8815,48 @@ section h2:after {
   padding-bottom: 0.5rem;
 }
 
+.process {
+  padding-top: 8rem;
+  padding-bottom: 15rem;
+  color: white;
+  background: url(img/section.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  background-size: cover;
+}
+.process h2 {
+  padding-bottom: 5rem;
+}
+.process h2:after {
+  background: white;
+}
+.process .box_wrapper {
+  border: 2px solid white;
+  border-radius: 0.25rem;
+  padding: 1.5rem;
+  position: relative;
+}
+.process ul {
+  list-style-type: disc;
+}
+.process .box_top {
+  padding-top: 1rem;
+}
+.process .box_bottom {
+  position: absolute;
+  left: 11rem;
+  transform: translateX(3%);
+}
+.process .box_bottom p {
+  padding: 0.7rem;
+}
+.process #spec {
+  left: 7rem;
+  top: -1rem;
+}
+
 .news {
   padding-top: 8rem;
   padding-bottom: 8rem;
