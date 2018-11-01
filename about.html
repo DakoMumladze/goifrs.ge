@@ -31,13 +31,13 @@
                     </div>
                 </li>
                 <li class="nav-item">
-                    <a href="#services" class="nav-link scroll">Services</a>
+                    <a href="index.html" class="nav-link">Services</a>
                 </li>  
                 <li class="nav-item">
-                    <a href="#news" class="nav-link scroll">News</a>
+                    <a href="index.html" class="nav-link">News</a>
                 </li> 
                 <li class="nav-item">
-                    <a href="#contact" class="nav-link scroll">Contact Us</a>
+                    <a href="index.html" class="nav-link">Contact Us</a>
                 </li>                                                    
                 <li class="nav-item">
                     <a href="#" class="nav-link">
@@ -48,7 +48,29 @@
             </div>
             </div>  
         </nav>
-    </header>
+    <section class="container-fluid about" id="about_us">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card">
+                    <h2 class="heading primary-color">About us</h2>
+                    <p class="pt-3">Goifrs company offers creating seperate and consolidating Financial Statements in accordance with International Financial Reporting Standards. If you are a non-financial profit oriented organization registered as a joint stock company or a limited liability company and need IFRS financial statements for loan application, supervisory reporting or other purposes, our highly qualified team will construct IFRS financial statements in a timely manner. View our offered products on the services page.</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card">
+                    <h2 class="heading primary-color">Our Goals</h2>
+                    <ul>
+                        <li>Adhering to highest ethical and professional standards</li>
+                        <li>Preparing high quality fiancial statements</li>
+                        <li>Satisfying our custumer's needs</li>
+                    </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</header>
     <footer class="container-fluid">
         <div class="container footer text-center">
             <p>Copyright ©2018 All rights reserved</p>
@@ -61,6 +83,14 @@
 
 
 <script src="node_modules/jquery/dist/jquery.min.js"></script>
+<script>
+    $(function () {
+    $(document).scroll(function () {
+        var $nav = $(".fixed-top");
+        $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+    });
+    });
+</script>
 <script src="js/smooth.js"></script>
 <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 </body>

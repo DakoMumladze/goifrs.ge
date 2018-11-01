@@ -70,7 +70,7 @@ $grey:#f9f9f9;
 .primary-color{
     color:$primary;
 }
-header{
+.header{
     position: relative;
     overflow: hidden;
     background-image: url(img/header.jpg);
@@ -334,5 +334,19 @@ footer{
     transition: .3s;
     &:hover{
         transform: translateX(5px);
+    }
+}
+//about.html
+#header_about{
+    padding-bottom: 0;
+}
+#about_us{
+    padding-bottom:2rem;
+    background:none;
+    h2:after{
+        display: none;
+    }
+    .card{
+        padding:2rem;
     }
 }

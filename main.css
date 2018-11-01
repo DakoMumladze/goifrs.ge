@@ -8664,7 +8664,7 @@ body {
   color: rgba(185, 59, 32, 0.8);
 }
 
-header {
+.header {
   position: relative;
   overflow: hidden;
   background-image: url(img/header.jpg);
@@ -8675,11 +8675,11 @@ header {
   background-size: cover;
   padding-bottom: 8rem;
 }
-header .fa-facebook {
+.header .fa-facebook {
   font-weight: bold;
   font-size: 1.2rem;
 }
-header .header_text {
+.header .header_text {
   word-wrap: break-word;
   width: 100%;
   display: flex;
@@ -8690,23 +8690,23 @@ header .header_text {
   color: white;
   font-size: 1.2rem;
 }
-header .header_text h1 {
+.header .header_text h1 {
   z-index: 1;
 }
-header .header_text p {
+.header .header_text p {
   z-index: 1;
 }
-header .header_text a {
+.header .header_text a {
   cursor: pointer;
   color: white;
   z-index: 1;
 }
-header .header_text .btn-primary {
+.header .header_text .btn-primary {
   background-color: rgba(185, 59, 32, 0.8);
   border-color: rgba(185, 59, 32, 0.8);
   padding: 0.575rem 1.75rem;
 }
-header .header_text .btn-primary:active {
+.header .header_text .btn-primary:active {
   background-color: rgba(185, 59, 32, 0.8);
 }
 
@@ -8933,6 +8933,21 @@ footer {
 }
 .fa-arrow-right:hover {
   transform: translateX(5px);
+}
+
+#header_about {
+  padding-bottom: 0;
+}
+
+#about_us {
+  padding-bottom: 2rem;
+  background: none;
+}
+#about_us h2:after {
+  display: none;
+}
+#about_us .card {
+  padding: 2rem;
 }
 
 /*# sourceMappingURL=main.css.map */
