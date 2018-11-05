@@ -8950,4 +8950,15 @@ footer {
   padding: 2rem;
 }
 
+#header_team {
+  background: none;
+}
+#header_team nav {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.team {
+  padding-bottom: 8rem;
+}
+
 /*# sourceMappingURL=main.css.map */
