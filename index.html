@@ -9,6 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <header class="container-fluid header">
@@ -63,7 +64,7 @@
                     <p class="pt-3">Goifrs company offers creating seperate and consolidating Financial Statements in accordance with International Financial Reporting Standards. If you are a non-financial profit oriented organization registered as a joint stock company or a limited liability company and need IFRS financial statements for loan application, supervisory reporting or other purposes, our highly qualified team will construct IFRS financial statements in a timely manner. View our offered products on the services page.</p>
                 </div>
                 <div class="col-md-6">
-                    <img src="img/Consulting.jpg" alt="team" title="team" class="img-fluid">
+                    <img src="img/Consulting.jpg" alt="team" title="team" class="img-fluid" data-aos="fade-left">
                 </div>
             </div>
 
@@ -73,7 +74,7 @@
         <h2 class="heading primary-color">Packages</h2>  
         <!-- <div id="container" style="min-width: 310px; height: 400px; max-width: 600px; margin:0 auto"></div> -->
         <div class="row pt-5">
-            <div class="col-md-6">
+            <div class="col-md-6" data-aos="fade-right">
                 <div class="card mb-4 shadow-sm">
                     <div class="card-header text-center">
                     <h4 class="my-0 font-weight-normal">Total Assets</h4>
@@ -95,7 +96,7 @@
                     </div>                    
                 </div>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-6" data-aos="fade-left">
                 <div class="card mb-4 shadow-sm">
                     <div class="card-header text-center">
                     <h4 class="my-0 font-weight-normal">Total Assets</h4>
@@ -119,7 +120,7 @@
             </div>            
         </div>
         <div class="row pt-2">
-            <div class="col-md-6">
+            <div class="col-md-6" data-aos="fade-right">
                 <div class="card mb-4 shadow-sm">
                     <div class="card-header text-center">
                     <h4 class="my-0 font-weight-normal">Total Assets</h4>
@@ -141,7 +142,7 @@
                     </div>                    
                 </div>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-6" data-aos="fade-left">
                 <div class="card mb-4 shadow-sm">
                     <div class="card-header text-center">
                     <h4 class="my-0 font-weight-normal">Total Assets</h4>
@@ -164,7 +165,7 @@
                 </div>
             </div>           
         </div>
-        <div class="row pt-2">
+        <div class="row pt-2" data-aos="fade-down">
             <div class="col-md-12">
                 <div class="card mb-4 shadow-sm">
                     <div class="card-header text-center">
@@ -369,6 +370,10 @@
 <script src="node_modules/jquery/dist/jquery.min.js"></script>
 <!-- <script src="https://code.highcharts.com/highcharts.js"></script>
 <script src="js/chart.js"></script> -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 <script>
     $(function () {
     $(document).scroll(function () {
