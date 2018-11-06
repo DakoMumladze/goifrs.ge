@@ -186,29 +186,83 @@ section h2:after{
 .services{
     padding-top:$padb;
     padding-bottom: $padb;
-    .package_box{
-        background:$grey;
-        border-radius: .25rem;
-        transition: all .3s ease-in-out;
+    h5{
+        color:$primary;
+        font-weight: bold;
+    }
+    // .card:hover{
+    //     span{
+    //         border: 1px solid grey;
+    //         border-radius: .25rem;
+    //     }
+    // }
+    span{
+        color:$primary;
+        font-weight: bold;
+        font-size: large;
+        padding: .5rem;
         cursor: pointer;
-        .more{
-            padding-top: 6rem;
-        }
-        &:hover{
-            @include box_shadow();
-            h3,h4{
-                color:$primary;
-                font-weight: bold;
-            }
-            .btn-outline-dark{
-                background:#343a40;
-                color:#fff;
-            }
+        background: none;
+        border: 0;
+        box-shadow: inset 0 0 0 2px $grey;
+        position: relative;
+        vertical-align: middle;
+        &::before,
+        &::after {
+          box-sizing: inherit;
+          content: '';
+          position: absolute;
+          width: 100%;
+          height: 100%;
         }
     }
-    .nav-item{
-        padding-bottom: .5rem;
+    .draw {
+        transition: color 0.1s;
+    
+      &::before,
+      &::after {
+        border-radius: .25rem;
+        border: 2px solid transparent;
+        width: 0;
+        height: 0;
+      }
+      &::before {
+        top: 0;
+        left: 0;
+      }
+      &::after {
+        bottom: 0;
+        right: 0;
+      }      
+      &:hover {
+        color: $primary;
+      } 
+      &:hover::before,
+      &:hover::after {
+        width: 100%;
+        height: 100%;
+      }    
+      &:hover::before {
+        border-top-color: $primary; 
+        border-right-color: $primary;
+        transition:
+          width 0.25s ease-out,
+          height 0.25s ease-out 0.25s;
+      }
+    
+      &:hover::after {
+        border-bottom-color: $primary;
+        border-left-color: $primary;
+        transition:
+          border-color 0s ease-out 0.5s,
+          width 0.25s ease-out 0.5s,
+          height 0.25s ease-out 0.75s;
+      }
     }
+    .row1{
+        justify-content: space-between;
+    }
+    
 }
 //process section
 .process{
