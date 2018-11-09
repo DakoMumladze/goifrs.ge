@@ -404,3 +404,24 @@ footer{
 .team{
     padding-bottom: $padb;
 }
+//responsive
+@media (max-width:768px){
+    .process{
+        .box_wrapper{
+            margin-bottom:6rem;
+        }
+    }
+    #news{
+        .card{
+            margin-bottom:2rem;
+        }
+    }
+    #contact{
+        form{
+            margin-top:2rem;
+        }
+        .contact_info{
+            padding-bottom:3rem;
+        }
+    }
+}

@@ -8996,4 +8996,21 @@ footer {
   padding-bottom: 8rem;
 }
 
+@media (max-width: 768px) {
+  .process .box_wrapper {
+    margin-bottom: 6rem;
+  }
+
+  #news .card {
+    margin-bottom: 2rem;
+  }
+
+  #contact form {
+    margin-top: 2rem;
+  }
+  #contact .contact_info {
+    padding-bottom: 3rem;
+  }
+}
+
 /*# sourceMappingURL=main.css.map */
