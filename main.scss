@@ -1,7 +1,4 @@
 @import "node_modules/bootstrap/scss/bootstrap";
-body{
-    min-height:200vh;
-}
 *{
     font-family: 'Poppins';
 }
@@ -35,7 +32,6 @@ $grey:#f9f9f9;
     background-repeat:no-repeat;
     background-size: cover;
     background-position:top center;
-    background-size: cover;
 }
 @mixin bg-light{
     background-color:transparent;

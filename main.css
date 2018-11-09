@@ -8610,10 +8610,6 @@ h3 {
     border-color: #dee2e6;
   }
 }
-body {
-  min-height: 200vh;
-}
-
 * {
   font-family: "Poppins";
 }
@@ -8672,7 +8668,6 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top center;
-  background-size: cover;
   padding-bottom: 8rem;
 }
 .header .fa-facebook {
@@ -8859,7 +8854,6 @@ section h2:after {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top center;
-  background-size: cover;
 }
 .process h2 {
   padding-bottom: 5rem;
@@ -8939,7 +8933,6 @@ section h2:after {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top center;
-  background-size: cover;
   color: white;
 }
 .contact .contact_left {
