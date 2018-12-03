@@ -1,3 +1,6 @@
+$theme-colors: (
+  "primary": rgba(185, 59, 32, 0.8),
+);
 @import "node_modules/bootstrap/scss/bootstrap";
 *{
     font-family: 'Poppins';
@@ -182,6 +185,7 @@ section h2:after{
 .services{
     padding-top:$padb;
     padding-bottom: $padb;
+    overflow: hidden;
     h5{
         color:$primary;
         font-weight: bold;
@@ -288,8 +292,7 @@ section h2:after{
     }
     .box_bottom{
         position: absolute;
-        left: 2rem;
-        transform:translateX(3%);
+        left: .2rem;
         p{
             padding:.7rem;
         }
@@ -411,6 +414,14 @@ footer{
         .card{
             margin-bottom:2rem;
         }
+        .img_container{
+            width: 100%;
+            height: 16rem;
+            @include bg();
+        }
+        .first{
+            background: url(img/news1.jpg);
+        }
     }
     #contact{
         form{
@@ -418,6 +429,18 @@ footer{
         }
         .contact_info{
             padding-bottom:3rem;
+        }
+    }
+}
+@media(max-width:1024px){
+    .process{
+        .col-md-4{
+            max-width: 100%;
+            flex: 0 0 100%;
+            margin-bottom: 4rem;
+            &:nth-child(2n){
+                margin-bottom: 2rem;
+            }
         }
     }
 }
