@@ -187,7 +187,6 @@ section h2:after{
     padding-bottom: $padb;
     overflow: hidden;
     h5{
-        color:$primary;
         font-weight: bold;
     }
     // .card:hover{
@@ -262,7 +261,10 @@ section h2:after{
     .row1{
         justify-content: space-between;
     }
-    
+    .card-header{
+        background:$primary;
+        color:$wh;
+    }
 }
 //process section
 .process{

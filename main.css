@@ -8786,7 +8786,6 @@ section h2:after {
   overflow: hidden;
 }
 .services h5 {
-  color: rgba(185, 59, 32, 0.8);
   font-weight: bold;
 }
 .services span {
@@ -8844,6 +8843,10 @@ section h2:after {
 }
 .services .row1 {
   justify-content: space-between;
+}
+.services .card-header {
+  background: rgba(185, 59, 32, 0.8);
+  color: white;
 }
 
 .process {
@@ -9053,6 +9056,14 @@ body::-webkit-scrollbar {
 body::-webkit-scrollbar-thumb {
   background-color: rgba(185, 59, 32, 0.8);
   border-radius: 0.25rem;
+}
+
+.background {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  z-index: 0;
 }
 
 /*# sourceMappingURL=main.css.map */
